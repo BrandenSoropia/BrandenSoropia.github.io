@@ -2,6 +2,8 @@
 
 1.  **Start developing.**
 
+    > Make sure you have [Node.js](https://nodejs.org/en/) and [Gatsby CLI](https://www.gatsbyjs.org/docs/quick-start/) installed!
+
     Running locally:
 
     1. Clone this repo.
