@@ -1,4 +1,4 @@
-/* For site wide styles */
+/* For site wide styles. Colors should match the ones in theme. */
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 html {
@@ -8,6 +8,6 @@ html {
 }
 
 body {
-  color: white;
+  color: #e3e3e3;
   margin: 0;
 }
