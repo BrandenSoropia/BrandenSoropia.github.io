@@ -1,7 +1,7 @@
-import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
+import { Text } from "../theme";
 
 const Container = styled.div`
   background-color: transparent;
@@ -12,6 +12,7 @@ const Header = ({ siteTitle }) => {
   return (
     <Container>
       <p>{siteTitle}</p>
+      <Text>About</Text>
     </Container>
   );
 };

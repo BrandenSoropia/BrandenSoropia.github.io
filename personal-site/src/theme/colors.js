@@ -3,7 +3,8 @@ const colors = {
     grey: "#5d5453",
   },
   text: {
-    main: "#E3E3E3",
+    primary: "#E3E3E3",
+    secondary: "",
   },
 };
 
