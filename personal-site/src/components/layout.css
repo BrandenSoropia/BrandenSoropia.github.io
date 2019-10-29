@@ -1,13 +1,13 @@
 /* For site wide styles. Colors should match the ones in theme. */
-@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
 html {
-  background-color: #5d5453;
-  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  font-family: "Raleway", sans-serif;
   width: 100%;
 }
 
 body {
-  color: #e3e3e3;
+  color: #000000;
   margin: 0;
 }

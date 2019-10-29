@@ -1,8 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Branden Soropia",
-    description:
-      "Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.",
+    description: "Branden Soropia. Frontend web software developer.",
     author: "@gatsbyjs",
   },
   plugins: [
@@ -22,8 +21,8 @@ module.exports = {
         name: "gatsby-starter-default",
         short_name: "starter",
         start_url: "/",
-        background_color: "#5d5453",
-        theme_color: "#5d5453",
+        background_color: "#FFFFFF",
+        theme_color: "#FFFFFF",
         display: "minimal-ui",
         icon: "src/images/gatsby-icon.png", // This path is relative to the root of the site.
       },

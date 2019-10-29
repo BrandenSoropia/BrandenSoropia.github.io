@@ -1,10 +1,12 @@
 const colors = {
   background: {
-    grey: "#5d5453",
+    primary: "#FFFFFF",
   },
   text: {
-    primary: "#E3E3E3",
-    secondary: "",
+    primary: "#000000",
+  },
+  highlight: {
+    red: "#D14836",
   },
 };
 
