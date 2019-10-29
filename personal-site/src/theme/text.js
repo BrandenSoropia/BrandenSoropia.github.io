@@ -2,18 +2,22 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 
 const Text = styled.p`
-  ${({ theme, secondary }) => `
+  ${({ theme, subdued, withHover }) => `
         color: ${theme.colors.text.primary};
-        ${secondary ? "opacity: 0.3;" : ""}
+        font-size: 12px;
+        ${subdued ? "opacity: 0.3;" : ""}
+        ${withHover ? "&:hover { cursor: pointer; }" : ""}
     `}
 `;
 
 Text.propTypes = {
-  secondary: PropTypes.bool,
+  subdued: PropTypes.bool,
+  withHover: PropTypes.bool,
 };
 
 Text.defaultProps = {
-  secondary: false,
+  subdued: false,
+  withHover: false,
 };
 
 export default Text;
