@@ -1,9 +1,11 @@
+import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { space, layout, color, typography } from "styled-system";
 import propTypes from "@styled-system/prop-types";
+import { useIntl } from "react-intl";
 
-export const Text = styled.p`
+export const BaseText = styled.p`
   ${space}
   ${layout}
   ${color}
@@ -14,7 +16,37 @@ export const Text = styled.p`
   `}
 `;
 
+/**
+ * Display either react-intl textId with values (optional) or children.
+ * @param {object} rest - used to pass styled-system props
+ */
+export const Text = ({ textId, children, values, ...rest }) => {
+  const { formatMessage } = useIntl();
+
+  return textId ? (
+    <BaseText {...rest}>{formatMessage({ id: textId, values })}</BaseText>
+  ) : (
+    <BaseText {...rest}>{children}</BaseText>
+  );
+};
+
+/**
+ * Ideally I would write a custom prop validator to require at least
+ * `textId` or `text`. Hopefully it doesn't come back to bite me later!
+ */
 Text.propTypes = {
+  textId: PropTypes.string,
+  values: PropTypes.objectOf(PropTypes.any),
+  children: PropTypes.node,
+};
+
+Text.defaultProps = {
+  textId: "",
+  children: null,
+  values: {},
+};
+
+BaseText.propTypes = {
   subdued: PropTypes.bool,
   withHover: PropTypes.bool,
   ...propTypes.space,
@@ -23,16 +55,26 @@ Text.propTypes = {
   ...propTypes.typography,
 };
 
-Text.defaultProps = {
+BaseText.defaultProps = {
   subdued: false,
   withHover: false,
 };
 
-export const NormalText = styled(Text).attrs(() => ({
+export const NormalBaseText = styled(Text).attrs(() => ({
   fontSize: [0, 1],
 }));
 
 export const PageTitle = styled(Text).attrs(() => ({
+  fontSize: "2",
+  fontWeight: "bold",
+}))``;
+
+export const Header = styled(Text).attrs(() => ({
+  fontSize: "6",
+  fontWeight: "bold",
+}))``;
+
+export const SubHeader = styled(Text).attrs(() => ({
   fontSize: "4",
   fontWeight: "bold",
 }))``;

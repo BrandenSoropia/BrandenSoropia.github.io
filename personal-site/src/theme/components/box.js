@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { space, layout, color } from "styled-system";
 import propTypes from "@styled-system/prop-types";
 
-export const Box = styled.div`
+const Box = styled.div`
   ${space}
   ${layout}
   ${color}

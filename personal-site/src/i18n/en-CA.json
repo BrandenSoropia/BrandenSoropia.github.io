@@ -1,5 +1,8 @@
 {
-  "ABOUT": "About",
-  "PORTFOLIO": "Portfolio",
-  "CONTACT": "Contact"
+  "WORK": "WORK",
+  "PLAY": "PLAY",
+  "CONTACT": "CONTACT",
+  "GREETING": "Hey, I'm Branden 👋",
+  "ONE_LINER_ABOUT_ME": "I'm a frontend developer who likes to work with all things React.",
+  "TEST": "Test"
 }

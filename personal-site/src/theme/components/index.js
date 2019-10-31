@@ -1,3 +1,3 @@
-export * from "./box";
-export * from "./flex";
+export { default as Box } from "./box";
+export { default as Flex } from "./flex";
 export * from "./text";
