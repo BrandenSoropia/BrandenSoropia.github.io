@@ -11,13 +11,13 @@ const MarginRightText = styled(Text).attrs(() => ({
 // TODO: Finish nav for mobile
 const Header = ({ siteTitle }) => {
   return (
-    <Flex justifyContent="flex-start" mx="4" mt="3" alignItems="center">
+    <Flex justifyContent="flex-start" mx="4" pt="3" alignItems="center">
       <PageTitle mr="4">{siteTitle}</PageTitle>
       <MarginRightText withHover textId="WORK">
         <FormattedMessage id="WORK" />
       </MarginRightText>
       <MarginRightText withHover>
-        <FormattedMessage id="PLAY" />
+        <FormattedMessage id="FUN" />
       </MarginRightText>
       <MarginRightText withHover>
         <FormattedMessage id="CONTACT" />

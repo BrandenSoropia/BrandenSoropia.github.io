@@ -5,7 +5,7 @@ import { ThemeProvider } from "styled-components";
 import { IntlProvider } from "react-intl";
 import Header from "./header";
 import _theme from "../theme";
-import "./layout.css";
+import "./global.css";
 import EN_CA from "../i18n/en-CA";
 
 const Layout = ({ children }) => {
