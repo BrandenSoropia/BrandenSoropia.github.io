@@ -5,8 +5,8 @@ import { ThemeProvider } from "styled-components";
 import { IntlProvider } from "react-intl";
 import Header from "./header";
 import _theme from "../theme";
-import "./global.css";
 import EN_CA from "../i18n/en-CA";
+import { GlobalStyle } from "../theme/components";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,6 +28,7 @@ const Layout = ({ children }) => {
   return (
     <IntlProvider locale={locale} messages={messages[locale]}>
       <ThemeProvider theme={_theme}>
+        <GlobalStyle />
         <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
       </ThemeProvider>

@@ -23,10 +23,10 @@ export const BaseText = styled.p`
 export const Text = ({ textId, children, values, ...rest }) => {
   const { formatMessage } = useIntl();
 
-  return textId ? (
-    <BaseText {...rest}>{formatMessage({ id: textId, values })}</BaseText>
-  ) : (
-    <BaseText {...rest}>{children}</BaseText>
+  return (
+    <BaseText {...rest}>
+      {textId ? formatMessage({ id: textId, values }) : children}
+    </BaseText>
   );
 };
 
@@ -42,8 +42,8 @@ Text.propTypes = {
 
 Text.defaultProps = {
   textId: "",
+  values: null,
   children: null,
-  values: {},
 };
 
 BaseText.propTypes = {

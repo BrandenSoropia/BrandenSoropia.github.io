@@ -16,3 +16,17 @@
 
     1. Eslint
     2. Prettier
+
+## 📝 Todo:
+
+MVP:
+
+1. Move resume button to top right of Header so it's always accessible
+2. On landing page, short blurb about me
+3. On landing page, add some tiny flair to landing page!
+4. Basic contact via LinkedIn.
+
+Future:
+
+1. In dev page
+2. Apply in dev page to Work page and Fun Page.

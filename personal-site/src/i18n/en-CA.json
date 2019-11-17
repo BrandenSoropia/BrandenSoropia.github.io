@@ -3,6 +3,6 @@
   "FUN": "FUN",
   "CONTACT": "CONTACT",
   "GREETING": "Hey, I'm Branden 👋",
-  "ONE_LINER_ABOUT_ME": "I'm a frontend developer who likes to work with all things React.",
-  "TEST": "Test"
+  "ONE_LINER_ABOUT_ME": "I'm a frontend web developer who likes to work with all things React.",
+  "RESUME_PROMPT": "Get my resume"
 }
