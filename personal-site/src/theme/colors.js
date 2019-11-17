@@ -10,7 +10,8 @@ const colors = {
   },
   button: {
     primary: {
-      default: "#E63946",
+      text: "#FFFFFF",
+      backgroundColor: "#1D3557",
     },
   },
 };

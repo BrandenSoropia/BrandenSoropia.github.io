@@ -14,8 +14,8 @@ const Header = ({ siteTitle }) => {
       <MarginRightText withHover textId="WORK" />
       <MarginRightText withHove textId="FUN" />
       <MarginRightText withHover textId="CONTACT" />
-      <Button onClick={() => {}}>
-        <Text textId="RESUME_PROMPT" />
+      <Button ml="auto" onClick={() => {}}>
+        <Text m="0" textId="RESUME_PROMPT" />
       </Button>
     </Flex>
   );

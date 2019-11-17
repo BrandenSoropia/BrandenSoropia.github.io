@@ -1,14 +1,39 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { space, layout, color, border } from "styled-system";
 
 // TODO: Make primary button
 const primaryStyles = {
-  p: 3,
+  px: 4,
+  py: 3,
+  backgroundColor: "button.primary.backgroundColor",
+  color: "button.primary.text",
+  borderColor: "button.primary.backgroundColor",
+  fontWeight: "bold",
+  tabIndex: 0,
 };
 
-const Button = ({ primary, children, onClick }) => {
-  return <button onClick={onClick}>{children}</button>;
+const StyledButton = styled.button.attrs(({ primary }) => ({
+  ...(primary && primaryStyles),
+}))`
+  cursor: pointer;
+
+  ${space}
+  ${layout}
+  ${color}
+  ${border}
+`;
+/**
+ *
+ * @param {Object} rest should have all the styled-system props.
+ */
+const Button = ({ primary, children, onClick, ...rest }) => {
+  return (
+    <StyledButton {...rest} primary={primary} onClick={onClick}>
+      {children}
+    </StyledButton>
+  );
 };
 
 Button.propTypes = {
