@@ -14,6 +14,9 @@ const colors = {
       backgroundColor: "#1D3557",
     },
   },
+  link: {
+    focus: "#A8DADC",
+  },
 };
 
 export default colors;

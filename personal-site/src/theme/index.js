@@ -1,5 +1,6 @@
-// Theme values
+// Base Theme values
 import colors from "./colors";
+import { buttonVariantStyles } from "./components/button";
 
 /**
  * `styled-systems` can reference these values In their props. Explanation:
@@ -16,6 +17,7 @@ import colors from "./colors";
  */
 const theme = {
   colors,
+  buttons: buttonVariantStyles,
 };
 
 export default theme;
