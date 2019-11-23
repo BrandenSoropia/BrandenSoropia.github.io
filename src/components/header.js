@@ -9,7 +9,7 @@ const MarginRightLink = styled(Link).attrs(() => ({
 
 const Header = ({ siteTitle }) => {
   return (
-    <Flex justifyContent="flex-start" mx="4" pt="3" alignItems="center">
+    <Flex justifyContent="flex-start" alignItems="center" pt="3">
       <PageTitle mr="4">{siteTitle}</PageTitle>
       <MarginRightLink textId="WORK" to="#" />
       <MarginRightLink textId="FUN" to="#" />

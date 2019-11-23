@@ -75,6 +75,7 @@ export const Header = styled(Text).attrs(() => ({
 }))``;
 
 export const SubHeader = styled(Text).attrs(() => ({
-  fontSize: "4",
+  fontSize: "3",
   fontWeight: "bold",
+  lineHeight: "28px",
 }))``;
