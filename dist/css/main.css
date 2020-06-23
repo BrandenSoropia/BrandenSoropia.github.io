@@ -1,3 +1,60 @@
 /*! personal-site v1.0.0 | (c) 2020 Branden Soropia | MIT License | https://github.com/BrandenSoropia/personal-site */
-@use "components/fonts";
-@use "components/base";
+@font-face {
+  font-family: "Lato Thin";
+  font-style: normal;
+  font-weight: 300;
+  src: local("./fonts/lato-thin"), url("/fonts/lato-thin.woff2") format("woff2"), url("/fonts/lato-thin.woff") format("woff"), url("/fonts/lato-thin.ttf") format("truetype");
+  unicode-range: U+000-5FF;
+  /* Latin glyphs */
+}
+
+@font-face {
+  font-family: "Lato Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("./fonts/lato-regular"), url("/fonts/lato-regular.woff2") format("woff2"), url("/fonts/lato-regular.woff") format("woff"), url("/fonts/lato-regular.ttf") format("truetype");
+  unicode-range: U+000-5FF;
+  /* Latin glyphs */
+}
+
+@font-face {
+  font-family: "Lato Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local("./fonts/lato-bold"), url("/fonts/lato-bold.woff2") format("woff2"), url("/fonts/lato-bold.woff") format("woff"), url("/fonts/lato-bold.ttf") format("truetype");
+  unicode-range: U+000-5FF;
+  /* Latin glyphs */
+}
+
+@font-face {
+  font-family: "Lato Black";
+  font-style: normal;
+  font-weight: 900;
+  src: local("./fonts/lato-black"), url("/fonts/lato-black.woff2") format("woff2"), url("/fonts/lato-black.woff") format("woff"), url("/fonts/lato-black.ttf") format("truetype");
+  unicode-range: U+000-5FF;
+  /* Latin glyphs */
+}
+
+/**
+ * @section Base Styles
+ */
+/* line 4, src/sass/components/_base.scss */
+body {
+  font-family: "Lato Regular";
+}
+
+/* line 8, src/sass/components/_base.scss */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  /* line 2, src/sass/components/_phone.scss */
+  body {
+    font-size: 16px;
+    background-color: green !important;
+  }
+}
