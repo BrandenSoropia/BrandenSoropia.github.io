@@ -2,6 +2,14 @@ My personal site to show about me, contact and projects.
 
 Goal: I want it to be as fast and as accessible as possible. I also want to learn how to make static sites with HTML, SCSS/CSS and Javascript!
 
+## Setup and Development Instructions:
+
+1. Make sure you have Node installed. I'm using `v12.13.1`. Also make sure you have `yarn` classic installed to manage packages.
+2. Have Gulp CLI installed globally: `npm install --global gulp-cli`.
+3. Now clone repo and navigate to its directory in your terminal. Run `yarn` to install all dependencies.
+
+You're all setup! To start development in watch mode run `gulp watch`. It'll open this site in your default browser at `localhost:3000` and will hot-reload on any change.
+
 ### Stuff I Learned (Unordered)
 
 - As of mid 2020, `.tff`, `.woff`, `.woff2` fonts are needed for the widest modern browser compatibility (no I.E). [Useful thread about this](https://stackoverflow.com/questions/24990554/how-to-include-a-font-ttf-using-css)
