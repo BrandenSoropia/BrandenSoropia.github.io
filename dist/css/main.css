@@ -6,6 +6,7 @@
   src: local("./fonts/lato-thin"), url("/fonts/lato-thin.woff2") format("woff2"), url("/fonts/lato-thin.woff") format("woff"), url("/fonts/lato-thin.ttf") format("truetype");
   unicode-range: U+000-5FF;
   /* Latin glyphs */
+  font-display: swap;
 }
 
 @font-face {
@@ -15,6 +16,7 @@
   src: local("./fonts/lato-regular"), url("/fonts/lato-regular.woff2") format("woff2"), url("/fonts/lato-regular.woff") format("woff"), url("/fonts/lato-regular.ttf") format("truetype");
   unicode-range: U+000-5FF;
   /* Latin glyphs */
+  font-display: swap;
 }
 
 @font-face {
@@ -24,6 +26,7 @@
   src: local("./fonts/lato-bold"), url("/fonts/lato-bold.woff2") format("woff2"), url("/fonts/lato-bold.woff") format("woff"), url("/fonts/lato-bold.ttf") format("truetype");
   unicode-range: U+000-5FF;
   /* Latin glyphs */
+  font-display: swap;
 }
 
 @font-face {
@@ -33,6 +36,7 @@
   src: local("./fonts/lato-black"), url("/fonts/lato-black.woff2") format("woff2"), url("/fonts/lato-black.woff") format("woff"), url("/fonts/lato-black.ttf") format("truetype");
   unicode-range: U+000-5FF;
   /* Latin glyphs */
+  font-display: swap;
 }
 
 /**
