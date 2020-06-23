@@ -87,6 +87,19 @@ button {
   font: inherit;
 }
 
+/* line 52, src/sass/components/_base.scss */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  /* added line */
+}
+
 @media (min-width: 321px) and (max-width: 768px) {
   /* line 2, src/sass/components/_phone.scss */
   body {
@@ -110,7 +123,7 @@ button {
   }
   /* line 22, src/sass/components/_phone.scss */
   .project-overview:not(:last-of-type) {
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
   /* line 26, src/sass/components/_phone.scss */
   .project-overview .thumbnail {
@@ -130,7 +143,7 @@ button {
   }
   /* line 27, src/sass/components/_phone.scss */
   .project-overview .thumbnail i {
-    font-size: 64px;
+    font-size: 48px;
   }
   /* line 31, src/sass/components/_phone.scss */
   .project-overview .thumbnail.turquoise {

@@ -20,12 +20,12 @@
     -webkit-box-shadow: 10px 10px 0px 0px rgba($light-grey, 0.5);
 
     &:not(:last-of-type) {
-      margin-bottom: 16px;
+      margin-bottom: 24px;
     }
 
     .thumbnail {
       i {
-        font-size: 64px;
+        font-size: 48px;
       }
 
       &.turquoise {
