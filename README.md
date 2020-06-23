@@ -5,4 +5,7 @@ Goal: I want it to be as fast and as accessible as possible. I also want to lear
 ### Stuff I Learned (Unordered)
 
 - As of mid 2020, `.tff`, `.woff`, `.woff2` fonts are needed for the widest modern browser compatibility (no I.E). [Useful thread about this](https://stackoverflow.com/questions/24990554/how-to-include-a-font-ttf-using-css)
+
 - When using custom web fonts, it takes time to load them! In the mean time, it's best to default to system fonts which can be done simply by adding `font-display: swap;` to all `@font-face` rule sets! [Source](https://web.dev/font-display/?utm_source=lighthouse&utm_medium=devtools)
+
+- Use `<meta name="viewport" content="width=device-width, initial-scale=1" />` to make sure the website is set to match device's width. Without it, mobile users get desktop which is then scaled down to fit! Also a SEO boost to have this as a marker that this site is mobile friendly. [Source](https://web.dev/viewport/?utm_source=lighthouse&utm_medium=devtools)
