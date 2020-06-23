@@ -42,12 +42,44 @@
 /**
  * @section Base Styles
  */
-/* line 4, src/sass/components/_base.scss */
+/* line 11, src/sass/components/_base.scss */
 body {
   font-family: "Lato Regular";
+  color: #1a1a1a;
+  padding: 8px;
 }
 
-/* line 8, src/sass/components/_base.scss */
+/* line 17, src/sass/components/_base.scss */
+h1,
+h2,
+h3 {
+  font-family: "Lato Bold";
+  margin: 0;
+}
+
+/* line 24, src/sass/components/_base.scss */
+h1,
+h2 {
+  margin-bottom: 16px;
+}
+
+/* line 29, src/sass/components/_base.scss */
+h3 {
+  margin-bottom: 8px;
+}
+
+/* line 33, src/sass/components/_base.scss */
+p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* line 39, src/sass/components/_base.scss */
+header .subtle {
+  font-family: "Lato Thin";
+}
+
+/* line 44, src/sass/components/_base.scss */
 input,
 textarea,
 select,
@@ -59,6 +91,93 @@ button {
   /* line 2, src/sass/components/_phone.scss */
   body {
     font-size: 16px;
-    background-color: green !important;
+    background-color: white;
+  }
+  /* line 8, src/sass/components/_phone.scss */
+  #about-me p {
+    margin-bottom: 8px;
+  }
+  /* line 13, src/sass/components/_phone.scss */
+  .project-overview {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px 0px rgba(236, 240, 248, 0.5);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(236, 240, 248, 0.5);
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(236, 240, 248, 0.5);
+  }
+  /* line 22, src/sass/components/_phone.scss */
+  .project-overview:not(:last-of-type) {
+    margin-bottom: 16px;
+  }
+  /* line 26, src/sass/components/_phone.scss */
+  .project-overview .thumbnail {
+    border-radius: inherit;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 80px;
+            flex: 0 0 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* line 27, src/sass/components/_phone.scss */
+  .project-overview .thumbnail i {
+    font-size: 64px;
+  }
+  /* line 31, src/sass/components/_phone.scss */
+  .project-overview .thumbnail.turquoise {
+    background-color: rgba(107, 232, 234, 0.2);
+  }
+  /* line 34, src/sass/components/_phone.scss */
+  .project-overview .thumbnail.turquoise i {
+    color: #6be8ea;
+  }
+  /* line 39, src/sass/components/_phone.scss */
+  .project-overview .thumbnail.pink {
+    background-color: rgba(249, 194, 212, 0.2);
+  }
+  /* line 42, src/sass/components/_phone.scss */
+  .project-overview .thumbnail.pink i {
+    color: #f9c2d4;
+  }
+  /* line 55, src/sass/components/_phone.scss */
+  .project-overview header {
+    padding: 8px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+  }
+  /* line 59, src/sass/components/_phone.scss */
+  .project-overview header h3 {
+    margin: 0;
+  }
+  /* line 63, src/sass/components/_phone.scss */
+  .project-overview header .status {
+    font-family: "Lato Thin";
+  }
+  /* line 68, src/sass/components/_phone.scss */
+  .project-overview .tech-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+  /* line 74, src/sass/components/_phone.scss */
+  .project-overview .tech-list li {
+    display: inline;
+  }
+  /* line 77, src/sass/components/_phone.scss */
+  .project-overview .tech-list li:not(:first-of-type) {
+    margin-left: 8px;
   }
 }

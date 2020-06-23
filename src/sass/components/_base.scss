@@ -1,8 +1,44 @@
 /**
  * @section Base Styles
  */
+$pink: rgb(249, 194, 212);
+$fuschia: rgb(252, 43, 120);
+$turquoise: rgb(107, 232, 234);
+$black: rgb(26, 26, 26);
+$white: rgb(255, 255, 255);
+$light-grey: rgb(236, 240, 248);
+
 body {
   font-family: "Lato Regular";
+  color: $black;
+  padding: 8px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lato Bold";
+  margin: 0;
+}
+
+h1,
+h2 {
+  margin-bottom: 16px;
+}
+
+h3 {
+  margin-bottom: 8px;
+}
+
+p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+header {
+  .subtle {
+    font-family: "Lato Thin";
+  }
 }
 
 input,

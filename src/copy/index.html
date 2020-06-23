@@ -10,11 +10,15 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/0cffb1a7ff.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header><h1>Branden Soropia</h1></header>
-    <section>
-      <header>About Me</header>
+    <section id="about-me">
+      <header><h2>About Me</h2></header>
       <p>
         Hi, thanks for visiting! I'm Branden and I'm a web developer focused on
         UX and responsive design. My main tools are React, Redux for frontend,
@@ -44,16 +48,25 @@
       </p>
     </section>
     <section>
-      <header><h2>Projects</h2></header>
+      <header>
+        <h2><span class="subtle">My</span> Projects</h2>
+      </header>
       <section class="project-overview">
+        <div class="thumbnail turquoise">
+          <i class="fas fa-globe" aria-hidden="true"></i>
+        </div>
         <header>
           <h3>
-            <span role="img" aria-label="phone">📱</span
-            ><span role="img" aria-label="desktop">🖥</span>Dodo Getaways
+            Dodo Getaways
           </h3>
-          <p>(In-development)</p>
+          <p class="status">(In-Dev)</p>
+          <ul class="tech-list">
+            <li>Javascript/ES6</li>
+            <li>React</li>
+            <li>Go</li>
+          </ul>
         </header>
-        <p>
+        <!-- <p>
           Build, share and explore island travel brochure for Animal Crossing:
           New Horizons on your phone on computer!
         </p>
@@ -71,18 +84,24 @@
           rel="noopener noreferrer"
           href="https://github.com/BrandenSoropia/dodo-getaways-backend"
           >View backend repo</a
-        >
+        > -->
       </section>
       <section class="project-overview">
+        <div class="thumbnail pink">
+          <i class="fas fa-gamepad" aria-hidden="true"></i>
+        </div>
         <header>
           <h3>
-            <span role="img" aria-label="game controller">🕹</span>Dungeon
-            Explorer
+            Dungeon Explorer
           </h3>
-          <p>(Phase 1 Done. On Hold)</p>
+          <p class="status">(Phase 1 Done)</p>
+          <ul class="tech-list">
+            <li>C#</li>
+            <li>Unity</li>
+          </ul>
         </header>
 
-        <p>
+        <!-- <p>
           A simple 2D dungeon exploring game to learn game dev aiming to be
           played on the web.
         </p>
@@ -94,7 +113,7 @@
           rel="noopener noreferrer"
           href="https://github.com/BrandenSoropia/dungeon-explorer"
           >View repo</a
-        >
+        > -->
       </section>
     </section>
     <!-- Scripts -->
