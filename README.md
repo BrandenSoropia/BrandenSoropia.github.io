@@ -18,3 +18,5 @@ Goal: I want it to be as fast and as accessible as possible. I also want to lear
     <span class="visually-hidden">Web Icon</span>
   </div>
 ```
+
+- If a language is not set in the `html` tag like so, `<html lang="en">`, a screen reader will default to using the language the user set it to as fallback! [Source](https://web.dev/html-has-lang/?utm_source=lighthouse&utm_medium=devtools)
