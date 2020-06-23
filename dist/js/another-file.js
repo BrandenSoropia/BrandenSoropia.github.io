@@ -1,2 +1,2 @@
-/*! project-name v0.0.1 | (c) 2020 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
+/*! personal-site v1.0.0 | (c) 2020 Branden Soropia | MIT License | https://github.com/BrandenSoropia/personal-site */
 console.log('another-file.js file loaded');
