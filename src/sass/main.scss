@@ -1,4 +1,98 @@
 @import "include-media/dist/_include-media";
 @import "components/fonts";
 @import "components/base";
-@import "components/phone";
+
+body {
+  font-size: 16px;
+  background-color: $white;
+}
+
+#about {
+  p {
+    margin-bottom: 8px;
+  }
+}
+
+.project {
+  border-radius: 10px;
+  border: 1px solid $light-grey;
+  // https://css-tricks.com/snippets/css/css-box-shadow/
+  box-shadow: 10px 10px 0px 0px rgba($light-grey, 0.5);
+  -moz-box-shadow: 10px 10px 0px 0px rgba($light-grey, 0.5);
+  -webkit-box-shadow: 10px 10px 0px 0px rgba($light-grey, 0.5);
+
+  &:not(:last-of-type) {
+    margin-bottom: 24px;
+  }
+
+  header {
+    display: flex;
+    border-radius: inherit;
+
+    .thumbnail {
+      border-radius: 10px 0 0 0;
+      flex: 0 0 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        font-size: 48px;
+      }
+
+      &.turquoise {
+        background-color: rgba($turquoise, 0.2);
+
+        i {
+          color: $turquoise;
+        }
+      }
+
+      &.pink {
+        background-color: rgba($pink, 0.2);
+
+        i {
+          color: $pink;
+        }
+      }
+    }
+
+    .overview {
+      padding: 8px;
+
+      h3 {
+        margin: 0;
+      }
+
+      .status {
+        font-family: "Lato Thin";
+      }
+    }
+
+    .tech-list {
+      display: flex;
+      padding: 0;
+      list-style: none;
+      margin: 0;
+
+      li {
+        display: inline;
+
+        &:not(:first-of-type) {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+
+  section {
+    border-radius: 0 0 10px 10px;
+    padding: 16px;
+
+    .links {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+    }
+  }
+}

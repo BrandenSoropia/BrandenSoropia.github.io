@@ -17,11 +17,11 @@
   </head>
   <body>
     <header><h1>Branden Soropia</h1></header>
-    <section id="about-me">
+    <section id="about">
       <header><h2>About Me</h2></header>
       <p>
         Hi, thanks for visiting! I'm Branden and I'm a web developer focused on
-        UX and responsive design. My main tools are React, Redux for frontend,
+        UX and responsive design. My main tools are React/Redux for frontend,
         and am currently learning Go for backend. I like to build projects to
         try out new tech and keep up to date. You can see some of my work below!
       </p>
@@ -51,72 +51,83 @@
       <header>
         <h2><span class="subtle">My</span> Projects</h2>
       </header>
-      <section class="project-overview">
-        <div class="thumbnail turquoise">
-          <i class="fas fa-globe" aria-hidden="true"></i>
-          <span class="visually-hidden">Web Icon</span>
-        </div>
+      <article class="project">
         <header>
-          <h3>
-            Dodo Getaways
-          </h3>
-          <p class="status">(In-Dev)</p>
-          <ul class="tech-list">
-            <li>Javascript/ES6</li>
-            <li>React</li>
-            <li>Go</li>
-          </ul>
+          <div class="thumbnail turquoise">
+            <i class="fas fa-globe" aria-hidden="true"></i>
+            <span class="visually-hidden"
+              >The following icon is a web app.</span
+            >
+          </div>
+          <div class="overview">
+            <h3>
+              Dodo Getaways
+            </h3>
+            <p class="status">(In-Dev)</p>
+            <ul class="tech-list">
+              <li>React</li>
+              <li>Redux</li>
+              <li>Go</li>
+              <li>Javascript</li>
+              <li>ES6</li>
+            </ul>
+          </div>
         </header>
-        <!-- <p>
-          Build, share and explore island travel brochure for Animal Crossing:
-          New Horizons on your phone on computer!
-        </p>
-        <p>
-          Built using Javascript, ES6 and React for frontend and Go for backend.
-        </p>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/BrandenSoropia/dodo-getaways-frontend"
-          >View frontend repo</a
-        >
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/BrandenSoropia/dodo-getaways-backend"
-          >View backend repo</a
-        > -->
-      </section>
-      <section class="project-overview">
-        <div class="thumbnail pink">
-          <i class="fas fa-gamepad" aria-hidden="true"></i>
-          <span class="visually-hidden">Game Pad Icon</span>
-        </div>
+        <section>
+          <p>
+            Build, share and explore island travel brochure for Animal Crossing:
+            New Horizons on your phone on computer!
+          </p>
+          <div class="links">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/BrandenSoropia/dodo-getaways-frontend"
+              >View frontend repo
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/BrandenSoropia/dodo-getaways-backend"
+              >View backend repo
+            </a>
+          </div>
+        </section>
+      </article>
+      <article class="project">
         <header>
-          <h3>
-            Dungeon Explorer
-          </h3>
-          <p class="status">(Phase 1 Done)</p>
-          <ul class="tech-list">
-            <li>C#</li>
-            <li>Unity</li>
-          </ul>
+          <div class="thumbnail pink">
+            <i class="fas fa-gamepad" aria-hidden="true"></i>
+            <span class="visually-hidden"
+              >The following project is a game.</span
+            >
+          </div>
+          <div class="overview">
+            <h3>
+              Dungeon Explorer
+            </h3>
+            <p class="status">(Phase 1 Done)</p>
+            <ul class="tech-list">
+              <li>C#</li>
+              <li>Unity</li>
+            </ul>
+          </div>
         </header>
-
-        <!-- <p>
-          A simple 2D dungeon exploring game to learn game dev aiming to be
-          played on the web.
-        </p>
-        <p>
-          Built using C# and Unity.
-        </p>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/BrandenSoropia/dungeon-explorer"
-          >View repo</a
-        > -->
-      </section>
+        <section>
+          <p>
+            A simple 2D dungeon exploring game to learn game dev aiming to be
+            played on the web.
+          </p>
+          <div class="links">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/BrandenSoropia/dungeon-explorer"
+              >View repo</a
+            >
+          </div>
+        </section>
+      </article>
     </section>
     <!-- Scripts -->
     <script src="js/main.polyfills.js"></script>

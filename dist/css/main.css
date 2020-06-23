@@ -100,97 +100,129 @@ button {
   /* added line */
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
-  /* line 2, src/sass/components/_phone.scss */
-  body {
-    font-size: 16px;
-    background-color: white;
-  }
-  /* line 8, src/sass/components/_phone.scss */
-  #about-me p {
-    margin-bottom: 8px;
-  }
-  /* line 13, src/sass/components/_phone.scss */
-  .project-overview {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 80px;
-    border-radius: 10px;
-    box-shadow: 10px 10px 0px 0px rgba(236, 240, 248, 0.5);
-    -moz-box-shadow: 10px 10px 0px 0px rgba(236, 240, 248, 0.5);
-    -webkit-box-shadow: 10px 10px 0px 0px rgba(236, 240, 248, 0.5);
-  }
-  /* line 22, src/sass/components/_phone.scss */
-  .project-overview:not(:last-of-type) {
-    margin-bottom: 24px;
-  }
-  /* line 26, src/sass/components/_phone.scss */
-  .project-overview .thumbnail {
-    border-radius: inherit;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 80px;
-            flex: 0 0 80px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  /* line 27, src/sass/components/_phone.scss */
-  .project-overview .thumbnail i {
-    font-size: 48px;
-  }
-  /* line 31, src/sass/components/_phone.scss */
-  .project-overview .thumbnail.turquoise {
-    background-color: rgba(107, 232, 234, 0.2);
-  }
-  /* line 34, src/sass/components/_phone.scss */
-  .project-overview .thumbnail.turquoise i {
-    color: #6be8ea;
-  }
-  /* line 39, src/sass/components/_phone.scss */
-  .project-overview .thumbnail.pink {
-    background-color: rgba(249, 194, 212, 0.2);
-  }
-  /* line 42, src/sass/components/_phone.scss */
-  .project-overview .thumbnail.pink i {
-    color: #f9c2d4;
-  }
-  /* line 55, src/sass/components/_phone.scss */
-  .project-overview header {
-    padding: 8px;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 auto;
-            flex: 1 0 auto;
-  }
-  /* line 59, src/sass/components/_phone.scss */
-  .project-overview header h3 {
-    margin: 0;
-  }
-  /* line 63, src/sass/components/_phone.scss */
-  .project-overview header .status {
-    font-family: "Lato Thin";
-  }
-  /* line 68, src/sass/components/_phone.scss */
-  .project-overview .tech-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0;
-    list-style: none;
-    margin: 0;
-  }
-  /* line 74, src/sass/components/_phone.scss */
-  .project-overview .tech-list li {
-    display: inline;
-  }
-  /* line 77, src/sass/components/_phone.scss */
-  .project-overview .tech-list li:not(:first-of-type) {
-    margin-left: 8px;
-  }
+/* line 5, src/sass/main.scss */
+body {
+  font-size: 16px;
+  background-color: white;
+}
+
+/* line 11, src/sass/main.scss */
+#about p {
+  margin-bottom: 8px;
+}
+
+/* line 16, src/sass/main.scss */
+.project {
+  border-radius: 10px;
+  border: 1px solid #ecf0f8;
+  box-shadow: 10px 10px 0px 0px rgba(236, 240, 248, 0.5);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(236, 240, 248, 0.5);
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(236, 240, 248, 0.5);
+}
+
+/* line 24, src/sass/main.scss */
+.project:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+
+/* line 28, src/sass/main.scss */
+.project header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: inherit;
+}
+
+/* line 32, src/sass/main.scss */
+.project header .thumbnail {
+  border-radius: 10px 0 0 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 80px;
+          flex: 0 0 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 39, src/sass/main.scss */
+.project header .thumbnail i {
+  font-size: 48px;
+}
+
+/* line 43, src/sass/main.scss */
+.project header .thumbnail.turquoise {
+  background-color: rgba(107, 232, 234, 0.2);
+}
+
+/* line 46, src/sass/main.scss */
+.project header .thumbnail.turquoise i {
+  color: #6be8ea;
+}
+
+/* line 51, src/sass/main.scss */
+.project header .thumbnail.pink {
+  background-color: rgba(249, 194, 212, 0.2);
+}
+
+/* line 54, src/sass/main.scss */
+.project header .thumbnail.pink i {
+  color: #f9c2d4;
+}
+
+/* line 60, src/sass/main.scss */
+.project header .overview {
+  padding: 8px;
+}
+
+/* line 63, src/sass/main.scss */
+.project header .overview h3 {
+  margin: 0;
+}
+
+/* line 67, src/sass/main.scss */
+.project header .overview .status {
+  font-family: "Lato Thin";
+}
+
+/* line 72, src/sass/main.scss */
+.project header .tech-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+/* line 78, src/sass/main.scss */
+.project header .tech-list li {
+  display: inline;
+}
+
+/* line 81, src/sass/main.scss */
+.project header .tech-list li:not(:first-of-type) {
+  margin-left: 8px;
+}
+
+/* line 88, src/sass/main.scss */
+.project section {
+  border-radius: 0 0 10px 10px;
+  padding: 16px;
+}
+
+/* line 92, src/sass/main.scss */
+.project section .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 8px;
 }
