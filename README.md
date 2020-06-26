@@ -4,6 +4,8 @@ Goal: I want it to be as fast and as accessible as possible. I also want to lear
 
 ## Setup and Development Instructions:
 
+You must checkout the `dev` branch to do actual development. `master` branch is where the built files are dumped!
+
 1. Make sure you have Node installed. I'm using `v12.13.1`. Also make sure you have `yarn` classic installed to manage packages.
 2. Have Gulp CLI installed globally: `npm install --global gulp-cli`.
 3. Now clone repo and navigate to its directory in your terminal. Run `yarn` to install all dependencies.
