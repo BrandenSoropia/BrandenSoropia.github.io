@@ -4,8 +4,8 @@
 //  Colors
 $pink: rgb(249, 194, 212);
 $fuchsia: rgb(252, 43, 120);
-$turquoise: rgb(107, 232, 234);
 $sky-blue: rgb(176, 232, 242);
+$mustard: rgb(254, 218, 124);
 $black: rgb(26, 26, 26);
 $white: rgb(255, 255, 255);
 $light-grey: rgb(236, 240, 248);
@@ -25,7 +25,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Lato Bold";
+  font-family: "Lato Regular";
   margin: 0;
 }
 
@@ -43,26 +43,9 @@ p {
   line-height: 1.5;
 }
 
-header {
-  .subtle {
-    font-family: "Lato Thin";
-  }
-}
-
 input,
 textarea,
 select,
 button {
   font: inherit;
-}
-
-// Used to make icons a11y. https://a11yproject.com/posts/how-to-hide-content/
-.visually-hidden {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  white-space: nowrap; /* added line */
 }

@@ -1,39 +1,9 @@
 /*! personal-site v1.0.0 | (c) 2020 Branden Soropia | MIT License | https://github.com/BrandenSoropia/personal-site */
 @font-face {
-  font-family: "Lato Thin";
-  font-style: normal;
-  font-weight: 300;
-  src: local("./fonts/lato-thin"), url("/fonts/lato-thin.woff2") format("woff2"), url("/fonts/lato-thin.woff") format("woff"), url("/fonts/lato-thin.ttf") format("truetype");
-  unicode-range: U+000-5FF;
-  /* Latin glyphs */
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Lato Regular";
   font-style: normal;
   font-weight: 400;
   src: local("./fonts/lato-regular"), url("/fonts/lato-regular.woff2") format("woff2"), url("/fonts/lato-regular.woff") format("woff"), url("/fonts/lato-regular.ttf") format("truetype");
-  unicode-range: U+000-5FF;
-  /* Latin glyphs */
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lato Bold";
-  font-style: normal;
-  font-weight: 700;
-  src: local("./fonts/lato-bold"), url("/fonts/lato-bold.woff2") format("woff2"), url("/fonts/lato-bold.woff") format("woff"), url("/fonts/lato-bold.ttf") format("truetype");
-  unicode-range: U+000-5FF;
-  /* Latin glyphs */
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lato Black";
-  font-style: normal;
-  font-weight: 900;
-  src: local("./fonts/lato-black"), url("/fonts/lato-black.woff2") format("woff2"), url("/fonts/lato-black.woff") format("woff"), url("/fonts/lato-black.ttf") format("truetype");
   unicode-range: U+000-5FF;
   /* Latin glyphs */
   font-display: swap;
@@ -54,7 +24,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Lato Bold";
+  font-family: "Lato Regular";
   margin: 0;
 }
 
@@ -75,30 +45,12 @@ p {
   line-height: 1.5;
 }
 
-/* line 47, src/sass/components/_base.scss */
-header .subtle {
-  font-family: "Lato Thin";
-}
-
-/* line 52, src/sass/components/_base.scss */
+/* line 46, src/sass/components/_base.scss */
 input,
 textarea,
 select,
 button {
   font: inherit;
-}
-
-/* line 60, src/sass/components/_base.scss */
-.visually-hidden {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  white-space: nowrap;
-  /* added line */
 }
 
 /* line 5, src/sass/main.scss */
@@ -107,36 +59,52 @@ body {
   background-color: white;
 }
 
-/* line 11, src/sass/main.scss */
-#about p {
+/* line 9, src/sass/main.scss */
+body > section {
+  margin-bottom: 32px;
+}
+
+/* line 15, src/sass/main.scss */
+#about p:not(:last-of-type) {
   margin-bottom: 8px;
 }
 
-/* line 16, src/sass/main.scss */
-.project {
+/* line 20, src/sass/main.scss */
+.project,
+.talk {
   border-radius: 10px;
   padding: 16px;
   -webkit-box-shadow: 0px 18px 22px -19px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 18px 22px -19px rgba(0, 0, 0, 0.75);
 }
 
-/* line 23, src/sass/main.scss */
-.project.sky-blue {
+/* line 28, src/sass/main.scss */
+.project.sky-blue,
+.talk.sky-blue {
   background-color: #b0e8f2;
 }
 
-/* line 27, src/sass/main.scss */
-.project.pink {
+/* line 32, src/sass/main.scss */
+.project.pink,
+.talk.pink {
   background-color: #f9c2d4;
 }
 
-/* line 31, src/sass/main.scss */
-.project:not(:last-of-type) {
+/* line 36, src/sass/main.scss */
+.project.mustard,
+.talk.mustard {
+  background-color: #feda7c;
+}
+
+/* line 40, src/sass/main.scss */
+.project:not(:last-of-type),
+.talk:not(:last-of-type) {
   margin-bottom: 24px;
 }
 
-/* line 35, src/sass/main.scss */
-.project header {
+/* line 44, src/sass/main.scss */
+.project header,
+.talk header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,43 +115,61 @@ body {
   margin-bottom: 16px;
 }
 
-/* line 41, src/sass/main.scss */
-.project header h3 {
+/* line 50, src/sass/main.scss */
+.project header h3,
+.talk header h3 {
   margin: 0;
 }
 
-/* line 45, src/sass/main.scss */
-.project header .thumbnail {
+/* line 54, src/sass/main.scss */
+.project header .thumbnail,
+.talk header .thumbnail {
   margin-right: 16px;
-}
-
-/* line 48, src/sass/main.scss */
-.project header .thumbnail img {
-  height: 48px;
-  width: 48px;
   background-color: white;
   border: 4px solid #ecf0f8;
   border-radius: 10px;
+  height: 48px;
 }
 
-/* line 55, src/sass/main.scss */
-.project header .thumbnail img.sprite {
+/* line 61, src/sass/main.scss */
+.project header .thumbnail img,
+.talk header .thumbnail img {
+  height: 48px;
+  width: 48px;
+  /* Specially needed it to fill gab between border and rounded image corners */
+  border-radius: 5px;
+}
+
+/* line 67, src/sass/main.scss */
+.project header .thumbnail img.sprite,
+.talk header .thumbnail img.sprite {
   width: 32px;
   padding: 0 8px 0 8px;
 }
 
-/* line 62, src/sass/main.scss */
-.project header h4 {
+/* line 73, src/sass/main.scss */
+.project header .thumbnail .emoji,
+.talk header .thumbnail .emoji {
+  line-height: 1;
+  font-size: 32px;
+  padding: 8px;
+}
+
+/* line 80, src/sass/main.scss */
+.project header h4,
+.talk header h4 {
   color: #424242;
 }
 
-/* line 67, src/sass/main.scss */
-.project section {
+/* line 85, src/sass/main.scss */
+.project section,
+.talk section {
   border-radius: 0 0 10px 10px;
 }
 
-/* line 70, src/sass/main.scss */
-.project section .tech-list {
+/* line 88, src/sass/main.scss */
+.project section .tech-list,
+.talk section .tech-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,18 +179,21 @@ body {
   padding: 0;
 }
 
-/* line 77, src/sass/main.scss */
-.project section .tech-list li {
+/* line 95, src/sass/main.scss */
+.project section .tech-list li,
+.talk section .tech-list li {
   font-weight: bold;
 }
 
-/* line 80, src/sass/main.scss */
-.project section .tech-list li:not(:first-of-type) {
+/* line 98, src/sass/main.scss */
+.project section .tech-list li:not(:first-of-type),
+.talk section .tech-list li:not(:first-of-type) {
   margin-left: 8px;
 }
 
-/* line 86, src/sass/main.scss */
-.project section .repos {
+/* line 104, src/sass/main.scss */
+.project section .links,
+.talk section .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,8 +207,9 @@ body {
   margin-top: 16px;
 }
 
-/* line 92, src/sass/main.scss */
-.project section .repos .repo {
+/* line 110, src/sass/main.scss */
+.project section .links .link,
+.talk section .links .link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,25 +218,54 @@ body {
           align-items: center;
 }
 
-/* line 96, src/sass/main.scss */
-.project section .repos .repo:not(:last-of-type) {
+/* line 114, src/sass/main.scss */
+.project section .links .link:not(:last-of-type),
+.talk section .links .link:not(:last-of-type) {
   margin-bottom: 16px;
 }
 
-/* line 100, src/sass/main.scss */
-.project section .repos .repo a {
+/* line 118, src/sass/main.scss */
+.project section .links .link a,
+.talk section .links .link a {
   margin-right: 8px;
 }
 
-/* line 103, src/sass/main.scss */
-.project section .repos .repo a:not(:last-of-type) {
+/* line 121, src/sass/main.scss */
+.project section .links .link a:not(:last-of-type),
+.talk section .links .link a:not(:last-of-type) {
   margin-bottom: 16px;
 }
 
-/* line 108, src/sass/main.scss */
-.project section .repos .repo .navigation-icon {
+/* line 126, src/sass/main.scss */
+.project section .links .link .navigation-icon,
+.talk section .links .link .navigation-icon {
   background-color: #fc2b78;
   color: white;
-  padding: 2px;
+  padding: 2px 3px;
   border-radius: 900px;
+}
+
+/* line 137, src/sass/main.scss */
+#social {
+  margin-bottom: 8px;
+}
+
+/* line 140, src/sass/main.scss */
+#social p {
+  text-align: center;
+}
+
+/* line 144, src/sass/main.scss */
+#social .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 16px;
+}
+
+/* line 150, src/sass/main.scss */
+#social #copyright {
+  margin: 16px 0 8px 0;
 }

@@ -5,15 +5,20 @@
 body {
   font-size: 16px;
   background-color: $white;
+
+  & > section {
+    margin-bottom: 32px;
+  }
 }
 
 #about {
-  p {
+  p:not(:last-of-type) {
     margin-bottom: 8px;
   }
 }
 
-.project {
+.project,
+.talk {
   border-radius: $round;
   padding: 16px;
   -webkit-box-shadow: 0px 18px 22px -19px rgba(0, 0, 0, 0.75);
@@ -26,6 +31,10 @@ body {
 
   &.pink {
     background-color: $pink;
+  }
+
+  &.mustard {
+    background-color: $mustard;
   }
 
   &:not(:last-of-type) {
@@ -44,18 +53,27 @@ body {
 
     .thumbnail {
       margin-right: 16px;
+      background-color: $white;
+      border: 4px solid $light-grey;
+      border-radius: $round;
+      height: 48px;
 
       img {
         height: 48px;
         width: 48px;
-        background-color: $white;
-        border: 4px solid $light-grey;
-        border-radius: $round;
+        /* Specially needed it to fill gab between border and rounded image corners */
+        border-radius: 5px;
 
         &.sprite {
           width: 32px;
           padding: 0 8px 0 8px;
         }
+      }
+
+      .emoji {
+        line-height: 1;
+        font-size: 32px;
+        padding: 8px;
       }
     }
 
@@ -83,13 +101,13 @@ body {
       }
     }
 
-    .repos {
+    .links {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       margin-top: 16px;
 
-      .repo {
+      .link {
         display: flex;
         align-items: center;
 
@@ -108,10 +126,28 @@ body {
         .navigation-icon {
           background-color: $fuchsia;
           color: $white;
-          padding: 2px;
+          padding: 2px 3px;
           border-radius: $circle;
         }
       }
     }
+  }
+}
+
+#social {
+  margin-bottom: 8px;
+
+  p {
+    text-align: center;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 16px;
+  }
+
+  #copyright {
+    margin: 16px 0 8px 0;
   }
 }

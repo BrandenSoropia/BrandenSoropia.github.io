@@ -10,48 +10,39 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <script
-      src="https://kit.fontawesome.com/0cffb1a7ff.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
-    <header><h1>Branden Soropia</h1></header>
+    <header><h1>Hi, I'm Branden Soropia.</h1></header>
     <section id="about">
-      <header><h2>About Me</h2></header>
+      <header>
+        <h2>About Me</h2>
+      </header>
+
       <p>
-        Hi, thanks for visiting! I'm Branden and I'm a web developer focused on
-        UX and responsive design. My main tools are React/Redux for frontend,
-        and am currently learning Go for backend. I like to build projects to
-        try out new tech and keep up to date. You can see some of my work below!
+        I'm a web developer focused on UX, responsive design and testability. My
+        main tools are React/Redux for Frontend. I like to build projects to try
+        out new tech and keep up to date. You can see some of my work below!
       </p>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://drive.google.com/file/d/1g9VjEVRYaVDy-PaSqaLhmUTrcNJm4hy0/view?usp=sharing"
-        >You can grab a copy of my resume and contact here</a
-      >
       <p>
-        You can find more about me here:
+        What am I working on now? Learning Go and building a backend for my
+        <a href="#dodo-getaways">Dodo Getaways project!</a>
+      </p>
+      <p>
         <a
+          id="resume"
+          download
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/branden-soropia-024304a3/"
-          >Linked In</a
-        >
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/BrandenSoropia"
-          >Github</a
+          href="https://drive.google.com/file/d/1g9VjEVRYaVDy-PaSqaLhmUTrcNJm4hy0/view?usp=sharing"
+          >View my resume and contact</a
         >
       </p>
     </section>
-    <section>
+    <section id="projects">
       <header>
-        <h2><span class="subtle">My</span> Projects</h2>
+        <h2>My Projects</h2>
       </header>
-      <article class="project sky-blue">
+      <article id="dodo-getaways" class="project sky-blue">
         <header>
           <div class="thumbnail">
             <img
@@ -59,9 +50,6 @@
               alt="Dodo Getaways Icon"
               aria-hidden="true"
             />
-            <span class="visually-hidden"
-              >The following project is a web app.</span
-            >
           </div>
           <div>
             <h3>
@@ -83,8 +71,8 @@
             <li>Javascript</li>
             <li>ES6</li>
           </ul>
-          <div class="repos">
-            <div class="repo">
+          <div class="links">
+            <div class="link">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -93,7 +81,7 @@
               </a>
               <span class="navigation-icon" aria-hidden="true">→</span>
             </div>
-            <div class="repo">
+            <div class="link">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -114,9 +102,6 @@
               alt="Dodo Getaways Icon"
               aria-hidden="true"
             />
-            <span class="visually-hidden"
-              >The following project is a game.</span
-            >
           </div>
           <div>
             <h3>
@@ -134,8 +119,8 @@
             <li>C#</li>
             <li>Unity</li>
           </ul>
-          <div class="repos">
-            <div class="repo">
+          <div class="links">
+            <div class="link">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -148,7 +133,96 @@
         </section>
       </article>
     </section>
-    <!-- Scripts -->
-    <script src="js/main.polyfills.js"></script>
+    <section id="public-speaking">
+      <header>
+        <h2>Public Speaking</h2>
+      </header>
+      <article class="talk mustard">
+        <header>
+          <div class="thumbnail">
+            <p class="emoji" aria-hidden="true">🐙</p>
+          </div>
+          <div>
+            <h3>
+              React Testing Library Lunch And Learn
+            </h3>
+          </div>
+        </header>
+        <section>
+          <p>
+            Presented the perks of user interaction testing embodied by
+            <b>React Testing Library</b> and
+            <b>compared with E2E and Enzyme testing</b>. Testing via user
+            interaction is stronger than checking styles/components are rendered
+            but requires a bit of setup/mocking, which means more dev time. On
+            top of that, the docs are a little sparse which makes learning React
+            Testing Library a slow process.
+          </p>
+          <div class="links">
+            <div class="link">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://drive.google.com/file/d/1rt9WInRODAgNRFIUAksnJHH_DMxnfiWr/view?usp=sharing"
+                >View slides</a
+              >
+              <span class="navigation-icon" aria-hidden="true">→</span>
+            </div>
+          </div>
+        </section>
+      </article>
+      <article class="talk sky-blue">
+        <header>
+          <div class="thumbnail">
+            <p class="emoji" aria-hidden="true">✨</p>
+          </div>
+          <div>
+            <h3>
+              Frontend Code Quality Co-Presenter
+            </h3>
+          </div>
+        </header>
+        <section>
+          <p>
+            Presented League’s transition from QA to developer owned testing
+            culture at Drop's Frontend Code Quality tech talk hosted in Toronto.
+            Also did a demo of <b>Redux Saga testing</b> and compared the two
+            schools of testing, going step by step vs. skipping to end result,
+            and when each might be used.
+          </p>
+          <div class="links">
+            <div class="link">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://drive.google.com/file/d/1rt9WInRODAgNRFIUAksnJHH_DMxnfiWr/view?usp=sharing"
+                >View slides</a
+              >
+              <span class="navigation-icon" aria-hidden="true">→</span>
+            </div>
+          </div>
+        </section>
+      </article>
+    </section>
+    <footer id="social">
+      <p>
+        You can find me on here too!
+      </p>
+      <div class="links">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/branden-soropia-024304a3/"
+          >Linked In</a
+        >
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/BrandenSoropia"
+          >Github</a
+        >
+      </div>
+      <p id="copyright">© 2019 – 2020 Branden Soropia</p>
+    </footer>
   </body>
 </html>
