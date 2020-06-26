@@ -21,6 +21,8 @@ Super sketchy and manual atm...
 3. Push to dev. Copy `dist` and change branches to `master`.
 4. Paste new `dist` and overwrite if needed!
 
+That should be it, try going to https://brandensoropia.github.io/ to see it live!
+
 ### Stuff I Learned (Unordered)
 
 - As of mid 2020, `.tff`, `.woff`, `.woff2` fonts are needed for the widest modern browser compatibility (no I.E). [Useful thread about this](https://stackoverflow.com/questions/24990554/how-to-include-a-font-ttf-using-css)
