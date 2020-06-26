@@ -1,12 +1,19 @@
 /**
  * @section Base Styles
  */
+//  Colors
 $pink: rgb(249, 194, 212);
-$fuschia: rgb(252, 43, 120);
+$fuchsia: rgb(252, 43, 120);
 $turquoise: rgb(107, 232, 234);
+$sky-blue: rgb(176, 232, 242);
 $black: rgb(26, 26, 26);
 $white: rgb(255, 255, 255);
 $light-grey: rgb(236, 240, 248);
+$dark-grey: rgb(66, 66, 66);
+
+// Border Radii
+$round: 10px;
+$circle: 900px;
 
 body {
   font-family: "Lato Regular";
@@ -16,7 +23,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Lato Bold";
   margin: 0;
 }
