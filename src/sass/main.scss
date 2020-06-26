@@ -33,21 +33,29 @@ body {
   }
 
   header {
+    display: flex;
+    align-items: center;
     border-radius: inherit;
     margin-bottom: 16px;
 
-    .thumbnail {
-      i {
-        background-color: $white;
-        border-radius: $round;
-        color: $fuchsia;
-        font-size: 32px;
-        margin-bottom: 16px;
-        padding: 8px;
+    h3 {
+      margin: 0;
+    }
 
-        box-shadow: 3px 3px 0px 0px rgba($light-grey, 0.5);
-        -moz-box-shadow: 3px 3px 0px 0px rgba($light-grey, 0.5);
-        -webkit-box-shadow: 3px 3px 0px 0px rgba($light-grey, 0.5);
+    .thumbnail {
+      margin-right: 16px;
+
+      img {
+        height: 48px;
+        width: 48px;
+        background-color: $white;
+        border: 4px solid $light-grey;
+        border-radius: $round;
+
+        &.sprite {
+          width: 32px;
+          padding: 0 8px 0 8px;
+        }
       }
     }
 
@@ -67,7 +75,6 @@ body {
       padding: 0;
 
       li {
-        display: inline;
         font-weight: bold;
 
         &:not(:first-of-type) {
@@ -79,16 +86,15 @@ body {
     .repos {
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
       justify-content: space-between;
-      margin-top: 8px;
+      margin-top: 16px;
 
       .repo {
         display: flex;
         align-items: center;
 
         &:not(:last-of-type) {
-          margin-bottom: 8px;
+          margin-bottom: 16px;
         }
 
         a {
@@ -102,7 +108,7 @@ body {
         .navigation-icon {
           background-color: $fuchsia;
           color: $white;
-          padding: 8px;
+          padding: 2px;
           border-radius: $circle;
         }
       }
