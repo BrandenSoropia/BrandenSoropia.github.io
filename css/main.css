@@ -177,21 +177,18 @@ body > section {
   margin: 0;
   margin-top: 16px;
   padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-/* line 95, src/sass/main.scss */
+/* line 96, src/sass/main.scss */
 .project section .tech-list li,
 .talk section .tech-list li {
   font-weight: bold;
+  padding: 4px 8px 4px 0;
 }
 
-/* line 98, src/sass/main.scss */
-.project section .tech-list li:not(:first-of-type),
-.talk section .tech-list li:not(:first-of-type) {
-  margin-left: 8px;
-}
-
-/* line 104, src/sass/main.scss */
+/* line 103, src/sass/main.scss */
 .project section .links,
 .talk section .links {
   display: -webkit-box;
@@ -207,7 +204,7 @@ body > section {
   margin-top: 16px;
 }
 
-/* line 110, src/sass/main.scss */
+/* line 109, src/sass/main.scss */
 .project section .links .link,
 .talk section .links .link {
   display: -webkit-box;
@@ -218,25 +215,25 @@ body > section {
           align-items: center;
 }
 
-/* line 114, src/sass/main.scss */
+/* line 113, src/sass/main.scss */
 .project section .links .link:not(:last-of-type),
 .talk section .links .link:not(:last-of-type) {
   margin-bottom: 16px;
 }
 
-/* line 118, src/sass/main.scss */
+/* line 117, src/sass/main.scss */
 .project section .links .link a,
 .talk section .links .link a {
   margin-right: 8px;
 }
 
-/* line 121, src/sass/main.scss */
+/* line 120, src/sass/main.scss */
 .project section .links .link a:not(:last-of-type),
 .talk section .links .link a:not(:last-of-type) {
   margin-bottom: 16px;
 }
 
-/* line 126, src/sass/main.scss */
+/* line 125, src/sass/main.scss */
 .project section .links .link .navigation-icon,
 .talk section .links .link .navigation-icon {
   background-color: #fc2b78;
@@ -245,17 +242,17 @@ body > section {
   border-radius: 900px;
 }
 
-/* line 137, src/sass/main.scss */
+/* line 136, src/sass/main.scss */
 #social {
   margin-bottom: 8px;
 }
 
-/* line 140, src/sass/main.scss */
+/* line 139, src/sass/main.scss */
 #social p {
   text-align: center;
 }
 
-/* line 144, src/sass/main.scss */
+/* line 143, src/sass/main.scss */
 #social .links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -265,7 +262,7 @@ body > section {
   margin-top: 16px;
 }
 
-/* line 150, src/sass/main.scss */
+/* line 149, src/sass/main.scss */
 #social #copyright {
   margin: 16px 0 8px 0;
 }

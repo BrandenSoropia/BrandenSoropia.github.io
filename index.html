@@ -9,7 +9,7 @@
       content="Branden Soropia's software developer portfolio focused on UX and responsive design. My main tools are React, Redux for frontend and learning Go for backend."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="css/main.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
   </head>
   <body>
     <header><h1>Hi, I'm Branden Soropia.</h1></header>
@@ -24,8 +24,9 @@
         out new tech and keep up to date. You can see some of my work below!
       </p>
       <p>
-        What am I working on now? Learning Go and building a backend for my
-        <a href="#dodo-getaways">Dodo Getaways project!</a>
+        What am I working on now? Delving into React Native to prepare for
+        working at Figure 1! <a href="#kingpin-app">Checkout Kingpin App</a> to
+        see how it's going!
       </p>
       <p>
         <a
@@ -42,6 +43,48 @@
       <header>
         <h2>My Projects</h2>
       </header>
+      <article id="kingpin-app" class="project mustard">
+        <header>
+          <div class="thumbnail">
+            <img
+              src="./images/icon-kingpin-icon.png"
+              alt="Kingpin Icon"
+              aria-hidden="true"
+            />
+          </div>
+          <div>
+            <h3>
+              Kingpin App
+            </h3>
+            <h4 class="status">In Dev</h4>
+          </div>
+        </header>
+        <section>
+          <p>
+            Frontend prototype for an app to find skate parks and share your
+            road to trick mastery. Fun side project to learn React Native.
+          </p>
+          <ul class="tech-list">
+            <li>React Native</li>
+            <li>Redux</li>
+            <li>Javascript</li>
+            <li>ES6</li>
+            <li>Expo</li>
+            <li>Jest</li>
+          </ul>
+          <div class="links">
+            <div class="link">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/BrandenSoropia/kingpin-app"
+                >View Frontend repo
+              </a>
+              <span class="navigation-icon" aria-hidden="true">→</span>
+            </div>
+          </div>
+        </section>
+      </article>
       <article id="dodo-getaways" class="project sky-blue">
         <header>
           <div class="thumbnail">
@@ -55,7 +98,7 @@
             <h3>
               Dodo Getaways
             </h3>
-            <h4 class="status">In-Dev</h4>
+            <h4 class="status">On Hold</h4>
           </div>
         </header>
         <section>
@@ -70,6 +113,7 @@
             <li>Go</li>
             <li>Javascript</li>
             <li>ES6</li>
+            <li>Jest</li>
           </ul>
           <div class="links">
             <div class="link">
@@ -93,7 +137,7 @@
           </div>
         </section>
       </article>
-      <article class="project pink">
+      <article id="dungeon-explorer" class="project pink">
         <header>
           <div class="thumbnail">
             <img
